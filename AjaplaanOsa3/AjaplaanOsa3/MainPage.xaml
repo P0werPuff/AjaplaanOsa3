@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjaplaanOsa3.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightSkyBlue" Padding="24" CornerRadius="0">
+                <Label x:Name="LabelInfo" Text="" FontSize="20" BackgroundColor="LightSkyBlue"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <TimePicker x:Name="_timePicker" Time="11:00:00" Format="T" PropertyChanged="_timePicker_PropertyChanged" />
+                <Image x:Name="imageforpicker" Source="" WidthRequest="300"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
+
